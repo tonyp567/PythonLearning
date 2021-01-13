@@ -1,0 +1,12 @@
+print('how many guesses are reasonable?')
+tries = int(input())
+
+for i in range(1,tries+1):
+    print('password:')
+    if input() == '12345':
+        print('Access Granted.')
+        break
+    elif i == tries:
+        print('0 tries remaining. Access Denied')
+        break
+    print('Incorrect password: '+str(tries-i)+' tries remaining')
